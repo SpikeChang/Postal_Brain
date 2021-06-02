@@ -1,0 +1,8 @@
+department: input/info/江门机构.xlsx
+id2name: input/info/工号-作业姓名.xlsx
+partition: input/info/江门区域划分表.xls
+ratio: 24
+select: input/info/江门机构.xlsx
+velocity: 10
+weilan: input/info/机构围栏表.xlsx
+weilans: input/info/机构围栏坐标点表.csv
