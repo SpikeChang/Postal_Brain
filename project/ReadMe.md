@@ -77,24 +77,17 @@
 
 ##### 可修改参数
 
-数据处理的参数设置在`config.yaml`文件中修改，可修改参数如下：
+数据处理的参数设置在`config.yaml`文件中修改，可修改参数为`velocity`和`ratio`，其它尽量不要修改，除非你确定你知道你正在干什么：
 
 ```python
 ('velocity', type=int, default=10, help='Velocity: 揽投员运行速度')
 ('ratio', type=int, default=24, help='Ratio: 将系数转换为时间/h,设置为24则有平均一件0.05h')
-('department', type=str, default='data/江门机构.xlsx', help='Department: 需要处理的机构部门文件路径')
-('select', type=str, default='data/江门机构.xlsx', help='Select: 机构部门经纬度文件的路径')
-('partition', type=str, default='data/江门区域划分表.xls', help='Select: CBD等区域划分文件的路径')
-('id2name', type=str, default='data/工号-作业姓名.xlsx', help='Id2name: 工号-作业姓名文件路径')
-('weilan', type=str, default='data/机构围栏表.xlsx', help="Weilan: 机构围栏表文件路径")
-('weilans', type=str, default='data/机构围栏坐标点表.csv', help="Weilan: 机构围栏坐标点表文件路径")
+('department', type=str, default='input/info/江门机构.xlsx', help='Department: 需要处理的机构部门文件路径')
+('id2name', type=str, default='input/info/工号-作业姓名.xlsx', help='Id2name: 工号-作业姓名文件路径')
+('partition', type=str, default='input/info/江门区域划分表.xls', help='Select: CBD等区域划分文件的路径')
+('select', type=str, default='input/info/江门机构.xlsx', help='Select: 机构部门经纬度文件的路径')
+('weilan', type=str, default='input/info/机构围栏表.xlsx', help="Weilan: 机构围栏表文件路径")
+('weilans', type=str, default='input/info/机构围栏坐标点表.csv', help="Weilan: 机构围栏坐标点表文件路径")
 ```
 
 补充：基础快包一个件算出来权重1.2，1.2 / 24=0.5h，也就是平均一件3min。
-
-
-
-
-
-
-
